@@ -1,0 +1,246 @@
+<html>
+<style>
+h1
+{
+background-image: linear-gradient(to right, purple, yellow);
+color:#00264d;
+padding:10px 5px;
+text-align:center;
+border:5px solid black;
+}
+body
+{
+background-image: linear-gradient(to bottom right, yellow, purple);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+pading:20px;
+color:black;
+text-align:center;
+}
+p.1
+{
+padding:10px;
+text-align:left;
+}
+.bt1
+{
+padding: 10px;
+border:2px solid;
+position:absolute;
+top:200px;
+left:720px;
+font-size:20px;
+font-weight:bold;
+}
+.bt2
+{
+ padding: 10px ;
+border:2px solid;
+position:absolute;
+top:200px;
+left:775px;
+font-size:20px;
+font-weight:bold;
+}
+.bt3
+{
+ padding: 10px ;
+border:2px solid;
+position:absolute;
+top:200px;
+left:825px;
+font-size:20px;
+font-weight:bold;
+}
+.bt4
+{
+ padding: 10px ;
+border:2px solid;
+position:absolute;
+top:200px;
+left:875px;
+font-size:20px;
+font-weight:bold;
+}
+.bt5
+{
+ padding: 10px ;
+border:2px solid;
+position:absolute;
+top:200px;
+left:925px;
+font-size:20px;
+font-weight:bold;
+}
+.bt6
+{
+ padding: 15px ;
+border:2px solid;
+position:absolute;
+top:275px;
+left:790px;
+font-size:15px;
+font-weight:bold;
+}
+.bt7
+{
+ padding: 15px ;
+border:2px solid;
+position:absolute;
+top:275px;
+left:860px;
+font-size:15px;
+font-weight:bold;
+}
+.bt8
+{
+ padding: 15px ;
+border:2px solid;
+position:absolute;
+top:275px;
+left:930px;
+font-size:15px;
+font-weight:bold;
+}
+.bt9
+{
+ padding: 10px ;
+border:2px solid;
+position:absolute;
+top:200px;
+left:975px;
+font-size:20px;
+font-weight:bold;
+}
+.bt10
+{
+ padding: 15px ;
+border:2px solid;
+position:absolute;
+top:275px;
+left:720px;
+font-size:15px;
+font-weight:bold;
+}
+p.a
+{
+border:2px;
+position:absolute;
+top:325px;
+left:735px;
+border:3px solid  black;
+}
+p.b
+{
+position:absolute;
+top:325px;
+left:650px;
+font-weight:bold;
+}
+.n2,.n1
+{
+border:3px solid black;
+}
+
+</style>
+<head>
+  <title>CALCULATOR</title>
+</head>
+<body>
+<h1> CALCULATOR </h1>
+  <form>
+    NUMBER 1:<input type="numbers" id="num1" placeholder="enter..." class="n1">
+	<br>
+	<br>
+    NUMBER 2:<input type="numbers" id="num2" placeholder="enter..." class="n2">
+	<br>
+	<br>
+	<button class="bt1" type="button" class="btn" onclick="add();return false">+</button>
+	<button class="bt2" type="button" class="btn" onclick="sub();return false">-</button>
+	<button class="bt3" type="button" class="btn" onclick="mul();return false">x</button>
+	<button class="bt4" type="button" class="btn" onclick="div();return false">/</button>
+	<button class="bt5" type="button" class="btn" onclick="sqrt();return false">√</button>
+	<button class="bt6" type="button" class="btn" onclick="sin();return false">sin</button>
+	<button class="bt7" type="button" class="btn" onclick="cos();return false">cos</button>
+	<button class="bt8" type="button" class="btn" onclick="tan();return false">tan</button>
+	<button class="bt9" type="button" class="btn" onclick="pow();return false">^</button>
+	<button class="bt10" type="button" class="btn" onclick="log();return false">log</button>
+	<br>
+	<br>
+  </form>
+  <p class="b">
+  ANSWER:
+  </p>
+  <p class="a">
+  <input id="answer">
+  </p>
+    <script>
+ function add()
+ {
+ var a=document.getElementById("num1").value;
+ var b=document.getElementById("num2").value;
+ var c=parseFloat(a)+parseFloat(b);
+ document.getElementById("answer").value= c;
+ }
+ function sub()
+ {
+ var a=document.getElementById("num1").value;
+ var b=document.getElementById("num2").value;
+ var c=parseFloat(a)-parseFloat(b);
+ document.getElementById("answer").value= c;
+ }
+ function mul()
+ {
+ var a=document.getElementById("num1").value;
+ var b=document.getElementById("num2").value;
+ var c=parseFloat(a)*parseFloat(b);
+ document.getElementById("answer").value= c;
+ }
+ function div()
+ {
+ var a=document.getElementById("num1").value;
+ var b=document.getElementById("num2").value;
+ var c=parseFloat(a)/parseFloat(b);
+ document.getElementById("answer").value= c;
+ }
+  function sqrt()
+ {
+ var a=document.getElementById("num1").value;
+ var c=Math.sqrt(a);
+ document.getElementById("answer").value= c;
+ }
+  function sin()
+ {
+ var a=document.getElementById("num1").value;
+ var c=Math.sin(a);
+ document.getElementById("answer").value= c;
+ }
+  function cos()
+ {
+ var a=document.getElementById("num1").value;
+ var c=Math.cos(a);
+ document.getElementById("answer").value= c;
+ }
+  function tan()
+ {
+ var a=document.getElementById("num1").value;
+ var c=Math.tan(a);
+ document.getElementById("answer").value= c;
+ }
+  function log()
+ {
+ var a=document.getElementById("num1").value;
+ var c=Math.log(a);
+ document.getElementById("answer").value= c;
+ }
+  function pow()
+ {
+ var a=document.getElementById("num1").value;
+ var b=document.getElementById("num2").value;
+ var c=Math.pow(a,b);
+ document.getElementById("answer").value= c;
+ }
+  </script>
+</body>
+</html>
